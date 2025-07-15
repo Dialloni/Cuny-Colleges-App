@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- EditText for college/address input -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter college name or address" />
+
+    <!-- Button to show the map -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show on Map" />
+
+    <!-- Button to show the list of colleges -->
+    <Button
+        android:id="@+id/buttonGetList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show CUNY Colleges" />
+
+    <!-- Fragment container -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1" />
+</LinearLayout>
